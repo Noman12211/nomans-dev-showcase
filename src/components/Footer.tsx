@@ -127,9 +127,9 @@ const Footer = () => {
           <div className="container mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="flex items-center space-x-2 text-white/80 mb-4 md:mb-0">
-                <span>© {new Date().getFullYear()} Noman Ejaz. Made with</span>
-                <Heart className="w-4 h-4 text-red-400 fill-current" />
-                <span>and lots of coffee.</span>
+                <span>© {new Date().getFullYear()} Noman Ejaz. </span>
+                {/* <Heart className="w-4 h-4 text-red-400 fill-current" />
+                <span>and lots of coffee.</span> */}
               </div>
               
               <Button
