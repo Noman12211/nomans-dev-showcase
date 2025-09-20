@@ -21,22 +21,22 @@ All colors are HSL for consistency
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Primary Brand Colors - Professional Blue */
-    --primary: 221 83% 53%;
+    /* Primary Brand Colors - Modern Purple */
+    --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 221 83% 48%;
+    --primary-hover: 262 83% 53%;
 
     /* Secondary Colors */
-    --secondary: 221 47% 96%;
+    --secondary: 262 47% 96%;
     --secondary-foreground: 222 47% 11%;
 
     /* Muted Text & Backgrounds */
-    --muted: 221 47% 96%;
+    --muted: 262 47% 96%;
     --muted-foreground: 215 20% 50%;
 
     /* Accent Colors */
-    --accent: 221 47% 96%;
-    --accent-foreground: 221 83% 53%;
+    --accent: 262 47% 96%;
+    --accent-foreground: 262 83% 58%;
 
     /* Status Colors */
     --destructive: 0 84% 60%;
@@ -45,24 +45,24 @@ All colors are HSL for consistency
     --success-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 221 47% 90%;
-    --input: 221 47% 90%;
-    --ring: 221 83% 53%;
+    --border: 262 47% 90%;
+    --input: 262 47% 90%;
+    --ring: 262 83% 58%;
 
     /* Design System Enhancements */
     --radius: 0.75rem;
     
     /* Professional Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(221 83% 48%));
-    --gradient-secondary: linear-gradient(135deg, hsl(221 47% 96%), hsl(221 47% 94%));
-    --gradient-hero: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(221 83% 48%) 50%, hsl(214 83% 45%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(262 83% 53%));
+    --gradient-secondary: linear-gradient(135deg, hsl(262 47% 96%), hsl(262 47% 94%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(262 83% 53%) 50%, hsl(250 83% 50%) 100%);
     
     /* Professional Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(221 47% 11% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(221 47% 11% / 0.1), 0 2px 4px -1px hsl(221 47% 11% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(221 47% 11% / 0.1), 0 4px 6px -2px hsl(221 47% 11% / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(221 47% 11% / 0.1), 0 10px 10px -5px hsl(221 47% 11% / 0.04);
-    --shadow-glow: 0 0 50px hsl(221 83% 53% / 0.15);
+    --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.1), 0 2px 4px -1px hsl(222 47% 11% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.1), 0 4px 6px -2px hsl(222 47% 11% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(222 47% 11% / 0.1), 0 10px 10px -5px hsl(222 47% 11% / 0.04);
+    --shadow-glow: 0 0 50px hsl(262 83% 58% / 0.15);
     
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
