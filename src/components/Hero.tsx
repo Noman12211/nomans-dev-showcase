@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="mb-6">
             <p className="text-lg font-medium opacity-90 mb-2">Hello, I'm</p>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-4 bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
-              Noman Ejazz
+              Noman Ejaz
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold opacity-90 mb-6">
               Software Developer | ASP.NET Core | Web API | MVC | Mobile Apps
