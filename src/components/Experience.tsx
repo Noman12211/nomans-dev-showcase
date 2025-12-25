@@ -30,11 +30,10 @@ const Experience = () => {
             {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-primary rounded-full"></div>
             
-            {/* Timeline dot - positioned relative to the timeline container */}
-            <div className="absolute left-[26px] top-8 w-5 h-5 bg-primary rounded-full border-4 border-background shadow-lg z-10"></div>
-            
             <Card className="ml-20 hover-lift transition-all animate-slide-up border-primary/20">
               <CardContent className="p-8">
+                {/* Timeline dot */}
+                <div className="absolute -left-14 top-8 w-5 h-5 bg-primary rounded-full border-4 border-background shadow-lg z-10"></div>
                 
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div>
