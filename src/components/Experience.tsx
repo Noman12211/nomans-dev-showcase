@@ -37,7 +37,7 @@ const Experience = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">
                       <span className="inline-flex items-center gap-2">
-                        <span aria-hidden className="inline-block size-2 rounded-full bg-primary"></span>
+                        <span className="inline-block w-5 h-5 rounded-full bg-primary border-4 border-background shadow-lg"></span>
                         <span>Software Developer</span>
                       </span>
                     </h3>
