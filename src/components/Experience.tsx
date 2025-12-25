@@ -31,13 +31,16 @@ const Experience = () => {
             <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-primary rounded-full"></div>
             
             <Card className="relative ml-20 hover-lift transition-all animate-slide-up border-primary/20">
-              {/* Timeline dot */}
-              <div className="absolute -left-[54px] top-6 w-5 h-5 bg-primary rounded-full border-4 border-background shadow-lg z-10"></div>
               <CardContent className="p-8">
                 
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-foreground mb-2">Software Developer</h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      <span className="inline-flex items-center gap-2">
+                        <span aria-hidden className="inline-block size-2 rounded-full bg-primary"></span>
+                        <span>Software Developer</span>
+                      </span>
+                    </h3>
                     <div className="flex items-center space-x-3 mb-4">
                       <div className="flex items-center space-x-2">
                         <Briefcase className="w-5 h-5 text-primary" />
