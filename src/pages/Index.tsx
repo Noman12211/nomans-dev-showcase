@@ -1,4 +1,5 @@
-import Navigation from "@/components/Navigation";
+import Sidebar from "@/components/Sidebar";
+import MobileNav from "@/components/MobileNav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -11,15 +12,20 @@ import Footer from "@/components/Footer";
 const Index = () => { 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Education />
-      <Contact />
-      <Footer />
+      <Sidebar />
+      <MobileNav />
+      
+      {/* Main content with left margin for sidebar on desktop */}
+      <main className="lg:ml-64 pt-16 lg:pt-0">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Contact />
+        <Footer />
+      </main>
     </div>
   );
 };

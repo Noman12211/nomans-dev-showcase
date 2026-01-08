@@ -58,24 +58,26 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-background">
+    <section id="skills" className="py-20 bg-card/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
+          <p className="text-primary text-lg mb-2">My Abilities</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Technical <span className="text-primary">Skills</span>
+            My Skills
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise and proficiency levels
-          </p>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={category.title} className="hover-lift hover-glow transition-all animate-scale-in border-primary/20" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card 
+              key={category.title} 
+              className="inbio-card border-0 animate-scale-in" 
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <category.icon className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors">
+                  <category.icon className="w-8 h-8 text-primary" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-foreground">{category.title}</CardTitle>
               </CardHeader>
@@ -86,10 +88,12 @@ const Skills = () => {
                       <span className="font-medium text-foreground text-sm">{skill.name}</span>
                       <span className="text-primary font-semibold text-sm">{skill.level}%</span>
                     </div>
-                    <Progress 
-                      value={skill.level} 
-                      className="h-2 bg-secondary"
-                    />
+                    <div className="h-2 bg-accent rounded-full overflow-hidden">
+                      <div 
+                        className="h-full bg-primary rounded-full transition-all duration-1000 ease-out"
+                        style={{ width: `${skill.level}%` }}
+                      />
+                    </div>
                   </div>
                 ))}
               </CardContent>
@@ -105,7 +109,10 @@ const Skills = () => {
               "RESTful APIs", "API Integration", "Background Services", "Microservices", 
               "Clean Architecture", "SOLID Principles", "Unit Testing", "Performance Optimization"
             ].map((skill) => (
-              <div key={skill} className="bg-gradient-primary text-white px-6 py-3 rounded-full font-medium shadow-md hover-lift">
+              <div 
+                key={skill} 
+                className="bg-accent text-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer"
+              >
                 {skill}
               </div>
             ))}

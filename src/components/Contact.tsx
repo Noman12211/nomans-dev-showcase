@@ -23,7 +23,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted:', formData);
   };
 
@@ -52,13 +51,14 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-card/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
+          <p className="text-primary text-lg mb-2">Get In Touch</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Get In <span className="text-primary">Touch</span>
+            Contact Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-8"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to start your next project? Let's discuss how I can help bring your ideas to life with modern, scalable solutions.
           </p>
@@ -77,11 +77,15 @@ const Contact = () => {
 
             <div className="space-y-6">
               {contactInfo.map((contact, index) => (
-                <Card key={contact.title} className="hover-lift transition-all border-primary/20" style={{ animationDelay: `${index * 0.1}s` }}>
+                <Card 
+                  key={contact.title} 
+                  className="inbio-card border-0 group" 
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                        <contact.icon className="w-6 h-6 text-white" />
+                      <div className="w-14 h-14 bg-accent rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                        <contact.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" />
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-foreground mb-1">{contact.title}</h4>
@@ -99,7 +103,7 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="bg-gradient-primary text-white p-6 rounded-2xl">
+            <div className="bg-primary text-white p-6 rounded-2xl">
               <h4 className="font-semibold text-lg mb-2">Quick Response Guarantee</h4>
               <p className="text-white/90">
                 I typically respond to all inquiries within 24 hours. For urgent projects, 
@@ -109,7 +113,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="hover-lift transition-all animate-scale-in border-primary/20">
+          <Card className="inbio-card border-0 animate-scale-in">
             <CardHeader>
               <CardTitle className="text-2xl font-semibold text-foreground flex items-center">
                 <Send className="w-6 h-6 text-primary mr-3" />
@@ -128,7 +132,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="Your full name"
                       required
-                      className="border-primary/30 focus:border-primary"
+                      className="bg-accent border-border focus:border-primary focus:ring-primary"
                     />
                   </div>
                   <div className="space-y-2">
@@ -141,7 +145,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
                       required
-                      className="border-primary/30 focus:border-primary"
+                      className="bg-accent border-border focus:border-primary focus:ring-primary"
                     />
                   </div>
                 </div>
@@ -155,7 +159,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     placeholder="Project inquiry, collaboration, etc."
                     required
-                    className="border-primary/30 focus:border-primary"
+                    className="bg-accent border-border focus:border-primary focus:ring-primary"
                   />
                 </div>
 
@@ -169,14 +173,14 @@ const Contact = () => {
                     placeholder="Tell me about your project, timeline, and requirements..."
                     rows={6}
                     required
-                    className="border-primary/30 focus:border-primary resize-none"
+                    className="bg-accent border-border focus:border-primary focus:ring-primary resize-none"
                   />
                 </div>
 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full btn-hero text-white font-semibold py-4"
+                  className="w-full btn-hero text-white font-semibold py-6"
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Send Message

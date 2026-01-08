@@ -17,7 +17,6 @@ const Projects = () => {
         "Admin Dashboard",
         "Real-time Notifications"
       ],
-      gradient: "from-emerald-500 to-teal-600"
     },
     {
       title: "QAMC – College Management System",
@@ -31,18 +30,18 @@ const Projects = () => {
         "Grade & Assessment Tracking",
         "Comprehensive Reporting"
       ],
-      gradient: "from-blue-500 to-indigo-600"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-secondary/30">
+    <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
+          <p className="text-primary text-lg mb-2">My Work</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Featured <span className="text-primary">Projects</span>
+            Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-8"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Showcasing real-world applications that demonstrate my expertise in building scalable, secure, and high-performance software solutions
           </p>
@@ -50,12 +49,15 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={project.title} className="hover-lift hover-glow transition-all animate-scale-in border-primary/20 overflow-hidden" style={{ animationDelay: `${index * 0.2}s` }}>
+            <Card 
+              key={project.title} 
+              className="inbio-card border-0 overflow-hidden animate-scale-in group" 
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
               <CardHeader className="relative">
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-10`}></div>
                 <div className="relative z-10">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${project.gradient} rounded-xl flex items-center justify-center mb-4`}>
-                    <project.icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300">
+                    <project.icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-foreground mb-3">{project.title}</CardTitle>
                 </div>
@@ -82,7 +84,10 @@ const Projects = () => {
                   <h4 className="font-semibold text-foreground mb-3">Technologies Used:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm">
+                      <Badge 
+                        key={tech} 
+                        className="bg-accent text-foreground hover:bg-primary hover:text-white px-3 py-1 text-sm transition-colors duration-300"
+                      >
                         {tech}
                       </Badge>
                     ))}
