@@ -10,6 +10,7 @@ const Education = () => {
       year: "2021",
       description: "Advanced studies in computer science with focus on software engineering, algorithms, and system design. Developed strong analytical and problem-solving skills.",
       achievements: ["Software Engineering Specialization", "Advanced Database Systems", "Algorithm Design & Analysis"],
+      gradient: "from-purple-500 to-indigo-600"
     },
     {
       degree: "ADP Computer Science",
@@ -17,18 +18,18 @@ const Education = () => {
       year: "2018",
       description: "Foundation in computer science fundamentals including programming, data structures, and software development methodologies. Built core technical skills.",
       achievements: ["Programming Fundamentals", "Data Structures & Algorithms", "Web Development Basics"],
+      gradient: "from-blue-500 to-cyan-600"
     }
   ];
 
   return (
-    <section id="education" className="py-20">
+    <section id="education" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <p className="text-primary text-lg mb-2">My Background</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Education & Learning
+            <span className="text-primary">Education</span> & Learning
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Academic foundation and continuous learning that shaped my technical expertise
           </p>
@@ -36,15 +37,11 @@ const Education = () => {
 
         <div className="max-w-4xl mx-auto space-y-8">
           {educationData.map((education, index) => (
-            <Card 
-              key={education.degree} 
-              className="inbio-card border-0 overflow-hidden animate-slide-up" 
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
+            <Card key={education.degree} className="hover-lift hover-glow transition-all animate-slide-up border-primary/20 overflow-hidden" style={{ animationDelay: `${index * 0.2}s` }}>
               <CardContent className="p-0">
                 <div className="flex flex-col lg:flex-row">
                   {/* Left side - Degree info */}
-                  <div className="lg:w-1/3 p-8 bg-primary text-white relative overflow-hidden">
+                  <div className={`lg:w-1/3 p-8 bg-gradient-to-br ${education.gradient} text-white relative overflow-hidden`}>
                     <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
                     <div className="relative z-10">
                       <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mb-6">
@@ -80,7 +77,7 @@ const Education = () => {
                       </div>
                     </div>
 
-                    <Badge className="bg-accent text-foreground px-4 py-2 text-sm font-medium">
+                    <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
                       Graduated {education.year}
                     </Badge>
                   </div>
@@ -104,10 +101,7 @@ const Education = () => {
               "Azure Cloud Services",
               "Modern Frontend Frameworks"
             ].map((cert) => (
-              <div 
-                key={cert} 
-                className="bg-accent text-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer"
-              >
+              <div key={cert} className="bg-gradient-primary text-white px-6 py-3 rounded-full font-medium shadow-md hover-lift">
                 {cert}
               </div>
             ))}

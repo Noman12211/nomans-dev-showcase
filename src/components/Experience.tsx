@@ -15,33 +15,33 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-card/30">
+    <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <p className="text-primary text-lg mb-2">My Journey</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Work Experience
+            Work <span className="text-primary">Experience</span>
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-8"></div>
         </div>
 
         <div className="max-w-4xl mx-auto">
           {/* Timeline */}
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-0 md:left-8 top-0 bottom-0 w-1 bg-primary/30 rounded-full"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-primary rounded-full"></div>
             
-            {/* Timeline dot */}
-            <div className="absolute left-0 md:left-8 top-8 w-4 h-4 -ml-1.5 rounded-full bg-primary shadow-lg shadow-primary/50"></div>
-            
-            <Card className="inbio-card border-0 ml-6 md:ml-20 animate-slide-up">
+            <Card className="relative ml-20 hover-lift transition-all animate-slide-up border-primary/20">
               <CardContent className="p-8">
+                
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">
-                      Software Developer
+                      <span className="inline-flex items-center gap-2">
+                        <span className="inline-block w-5 h-5 rounded-full bg-primary border-4 border-background shadow-lg"></span>
+                        <span>Software Developer</span>
+                      </span>
                     </h3>
-                    <div className="flex flex-wrap items-center gap-3 mb-4">
+                    <div className="flex items-center space-x-3 mb-4">
                       <div className="flex items-center space-x-2">
                         <Briefcase className="w-5 h-5 text-primary" />
                         <span className="font-semibold text-primary">Bit&Byte Lab</span>
@@ -52,7 +52,7 @@ const Experience = () => {
                       </div>
                     </div>
                   </div>
-                  <Badge className="bg-primary text-white px-4 py-2 text-sm font-medium">
+                  <Badge variant="secondary" className="px-4 py-2 text-sm font-medium lg:ml-4">
                     Full-time • 2+ years
                   </Badge>
                 </div>
@@ -70,10 +70,7 @@ const Experience = () => {
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {achievements.map((achievement, index) => (
-                      <div 
-                        key={index} 
-                        className="flex items-start space-x-3 p-4 bg-accent/50 rounded-lg hover:bg-accent transition-colors"
-                      >
+                      <div key={index} className="flex items-start space-x-3 p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-muted-foreground text-sm leading-relaxed">{achievement}</span>
                       </div>
@@ -81,7 +78,7 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-8 border-t border-border">
+                <div className="mt-8 pt-8 border-t border-primary/20">
                   <h4 className="font-semibold text-foreground mb-4">Core Technologies & Skills Applied:</h4>
                   <div className="flex flex-wrap gap-2">
                     {[
@@ -89,11 +86,7 @@ const Experience = () => {
                       "SQL Server", "Bootstrap", "JavaScript", "jQuery", "API Integration", 
                       "Background Services", "Azure", "Git", "Agile Methodology"
                     ].map((tech) => (
-                      <Badge 
-                        key={tech} 
-                        variant="outline" 
-                        className="border-primary/30 text-primary hover:bg-primary hover:text-white px-3 py-1 text-xs transition-colors duration-300"
-                      >
+                      <Badge key={tech} variant="outline" className="px-3 py-1 text-xs border-primary/30 text-primary">
                         {tech}
                       </Badge>
                     ))}
