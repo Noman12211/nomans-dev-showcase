@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { User, Code, Database, Smartphone } from "lucide-react";
+import { Code, Database, Smartphone, User } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const About = () => {
   const highlights = [
@@ -24,8 +25,8 @@ const About = () => {
           {/* Photo placeholder */}
           <div className="flex justify-center lg:justify-start animate-scale-in">
             <div className="relative">
-              <div className="w-80 h-80 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-xl hover-lift">
-                <User className="w-32 h-32 text-white" />
+              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl hover-lift">
+                <img src={profileImg} alt="Noman Ejaz" className="w-full h-full object-cover object-top" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-xl flex items-center justify-center shadow-lg">
                 <Code className="w-8 h-8 text-primary" />
