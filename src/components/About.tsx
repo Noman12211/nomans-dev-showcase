@@ -25,7 +25,7 @@ const About = () => {
           {/* Photo placeholder */}
           <div className="flex justify-center lg:justify-start animate-scale-in">
             <div className="relative">
-              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl hover-lift">
+              <div className="w-180 h-180 rounded-2xl overflow-hidden shadow-xl hover-lift">
                 <img src={profileImg} alt="Noman Ejaz" className="w-full h-full object-cover object-top" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-xl flex items-center justify-center shadow-lg">
@@ -40,16 +40,10 @@ const About = () => {
               Passionate Software Developer
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a dedicated software developer with expertise in <strong className="text-primary">ASP.NET Core</strong>, 
-              building robust <strong className="text-primary">RESTful APIs</strong>, and implementing secure authentication 
-              with <strong className="text-primary">JWT tokens</strong>. My experience spans across modern web development 
-              using <strong className="text-primary">MVC architecture</strong> and <strong className="text-primary">Entity Framework Code First</strong> approach.
-            </p>
+              I am a Full-Stack <strong className="text-primary">.NET Developer</strong> focused on designing secure, scalable systems with <strong className="text-primary">ASP.NET Core</strong>. I specialize in <strong className="text-primary">RESTful API development</strong> using Code-First architecture, JWT authentication, and role-based access control.
+ </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              On the frontend, I work with <strong className="text-primary">HTML5</strong>, <strong className="text-primary">CSS3</strong>, 
-              <strong className="text-primary">Bootstrap</strong>, <strong className="text-primary">JavaScript</strong>, and 
-              <strong className="text-primary">jQuery</strong>. I also have experience in mobile app development using 
-              <strong className="text-primary">MAUI</strong> for cross-platform solutions.
+              I developed <strong className="text-primary">Sublime Care Cloud</strong>, a centralized multi-business platform powered by <strong className="text-primary">ASP.NET Core Web API</strong> and integrated across <strong className="text-primary">ASP.NET MVC</strong>, <strong className="text-primary">Angular</strong>, and <strong className="text-primary">.NET MAUI</strong> applications.
             </p>
 
             {/* Highlight cards */}
@@ -68,7 +62,7 @@ const About = () => {
 
             {/* Tech badges */}
             <div className="flex flex-wrap gap-2 mt-6">
-              {["ASP.NET Core", "Web API", "MVC", "Entity Framework", "JWT", "Bootstrap", "JavaScript", "MAUI"].map((tech) => (
+              {["ASP.NET Core", "Web API", "MVC", "Angular", "Entity Framework", "JWT", "Html",  "Bootstrap", "JavaScript","jquery", "MAUI"].map((tech) => (
                 <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm font-medium">
                   {tech}
                 </Badge>

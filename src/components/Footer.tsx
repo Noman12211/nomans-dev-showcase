@@ -115,7 +115,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-white/80 mb-1">Location</p>
-                  <p className="text-white">Pakistan</p>
+                  <p className="text-white">Remote</p>
                 </div>
               </div>
             </div>

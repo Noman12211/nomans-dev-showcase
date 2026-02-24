@@ -45,7 +45,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      value: "Pakistan",
+      value: "Remote",
       href: "#",
       description: "Available for remote work worldwide"
     }

@@ -5,10 +5,10 @@ import { GraduationCap, Calendar, Award } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "MSc Computer Science",
+      degree: "MSc(IT) Information Technology",
       institution: "University of the Punjab",
       year: "2021",
-      description: "Advanced studies in computer science with focus on software engineering, algorithms, and system design. Developed strong analytical and problem-solving skills.",
+      description: "Advanced studies in informationtechnology with focus on software engineering, algorithms, and system design. Developed strong analytical and problem-solving skills.",
       achievements: ["Software Engineering Specialization", "Advanced Database Systems", "Algorithm Design & Analysis"],
       gradient: "from-purple-500 to-indigo-600"
     },

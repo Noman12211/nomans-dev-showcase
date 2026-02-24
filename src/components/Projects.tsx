@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Sublime Groceria",
-      description: "A comprehensive e-commerce grocery platform built with ASP.NET Core featuring user authentication, shopping cart functionality, order management, and secure payment processing. Includes admin panel for inventory management and real-time order tracking.",
+      description: "A comprehensive grocery platform built with ASP.NET Core featuring user authentication, shopping cart functionality, order management, and secure payment processing. Includes admin panel for inventory management and real-time order tracking.",
       icon: ShoppingCart,
       technologies: ["ASP.NET Core", "Web API", "Entity Framework", "JWT", "Bootstrap", "JavaScript"],
       features: [

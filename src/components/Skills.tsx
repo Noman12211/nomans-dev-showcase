@@ -1,61 +1,83 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { Server, Globe, Smartphone, Database, Wrench } from "lucide-react";
+import { Server, Globe, Smartphone, Database, Wrench, Languages } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
-    {
-      title: "Backend",
-      icon: Server,
-      skills: [
-        { name: "ASP.NET Core", level: 90 },
-        { name: "Web API", level: 88 },
-        { name: "MVC", level: 85 },
-        { name: "Entity Framework", level: 82 },
-        { name: "JWT Authentication", level: 80 },
-      ]
-    },
-    {
-      title: "Frontend",
-      icon: Globe,
-      skills: [
-        { name: "HTML5", level: 88 },
-        { name: "CSS3", level: 85 },
-        { name: "Bootstrap", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "jQuery", level: 78 },
-      ]
-    },
-    {
-      title: "Mobile",
-      icon: Smartphone,
-      skills: [
-        { name: "MAUI", level: 75 },
-        { name: "Cross-platform", level: 70 },
-        { name: "Mobile UI/UX", level: 72 },
-      ]
-    },
-    {
-      title: "Database",
-      icon: Database,
-      skills: [
-        { name: "SQL Server", level: 85 },
-        { name: "Code First", level: 82 },
-        { name: "Database Design", level: 80 },
-        { name: "LINQ", level: 78 },
-      ]
-    },
-    {
-      title: "Tools",
-      icon: Wrench,
-      skills: [
-        { name: "Visual Studio", level: 90 },
-        { name: "Git", level: 82 },
-        { name: "API Testing", level: 80 },
-        { name: "Azure DevOps", level: 75 },
-      ]
-    }
-  ];
+  {
+    title: "Frontend / Web Technologies",
+    icon: Globe,
+    skills: [
+      { name: "Angular", level: 82 },
+      { name: "HTML5", level: 88 },
+      { name: "CSS3", level: 85 },
+      { name: "Bootstrap", level: 85 },
+      { name: "JavaScript", level: 80 },
+      { name: "TypeScript", level: 80 },
+      { name: "jQuery", level: 78 },
+      { name: "Responsive Design", level: 84 }
+    ]
+  },
+  {
+    title: "Backend Development",
+    icon: Server,
+    skills: [
+      { name: "ASP.NET Core", level: 92 },
+      { name: "ASP.NET Core Web API", level: 90 },
+      { name: "ASP.NET MVC", level: 85 },
+      { name: "Entity Framework Core", level: 88 },
+      { name: "RESTful API Design", level: 88 },
+      { name: "JWT & Role-Based Auth", level: 85 }
+    ]
+  },
+  {
+    title: "Programming Languages",
+    icon: Languages,
+    skills: [
+      { name: "C#", level: 92 },
+      { name: "TypeScript", level: 80 },
+      { name: "JavaScript", level: 80 },
+      { name: "SQL", level: 85 },
+      { name: "Dart", level: 70 }
+    ]
+  },
+  {
+    title: "Mobile Development",
+    icon: Smartphone,
+    skills: [
+      { name: ".NET MAUI", level: 80 },
+      { name: "XAML", level: 80 },
+      { name: "Flutter", level: 70 },
+      { name: "Dart", level: 70 },
+      { name: "Cross-Platform App Development", level: 78 },
+      { name: "API Integration (Mobile)", level: 82 }
+    ]
+  },
+  {
+    title: "Database",
+    icon: Database,
+    skills: [
+      { name: "SQL Server", level: 88 },
+      { name: "Entity Framework (Code-First)", level: 88 },
+      { name: "Database Design", level: 82 },
+      { name: "LINQ", level: 85 }
+    ]
+  },
+  
+  {
+    title: "Tools & DevOps",
+    icon: Wrench,
+    skills: [
+      { name: "Visual Studio", level: 92 },
+      { name: "Git & GitHub", level: 85 },
+      { name: "Postman", level: 85 },
+      { name: "Swagger", level: 88 },
+      { name: "Azure DevOps", level: 75 },
+      { name: "AdminLTE", level: 80 }
+    ]
+  }
+];
+
 
   return (
     <section id="skills" className="py-20 bg-background">
