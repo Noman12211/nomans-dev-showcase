@@ -7,29 +7,40 @@ const Projects = () => {
   const projects = [
     {
       title: "Sublime Groceria",
-      description: "A comprehensive grocery platform built with ASP.NET Core featuring user authentication, shopping cart functionality, order management, and secure payment processing. Includes admin panel for inventory management and real-time order tracking.",
+      description: "A Comprihensive RESTful API built with ASP.NET Core that powers a grocery list and recipe management application. It enables users to create categorized grocery lists, manage recipes, and collaborate with family and friends for efficient shopping planning.The system integrates with an external nutrition API to fetch and store nutritional information for food items, helping users make informed dietary decisions.The API is consumed by a Flutter mobile application, with selected features also available through a web interface.",
       icon: ShoppingCart,
-      technologies: ["ASP.NET Core", "Web API", "Entity Framework", "JWT", "Bootstrap", "JavaScript"],
+      technologies: ["ASP.NET Core", "Web API", "Entity Framework", "JWT","External API","Background Services","MVC","Bootstrap", "JavaScript"],
       features: [
-        "User Authentication & Authorization",
-        "Shopping Cart & Checkout",
-        "Order Management System",
-        "Admin Dashboard",
-        "Real-time Notifications"
+        "🔐 JWT-based User Authentication & Role Management",
+        "🗂 Categorized Grocery Items",
+        "📝 Grocery List Creation & Sharing",
+        "👨‍👩‍👧 Collaborative List Management",
+        "⚖ Quantity Management & Unit Conversions",
+        "🍲 Recipe & Ingredient Management",
+        "🥗 Nutrition Data Integration (via External API)",
+        "📊 Nutritional Record Storage & Tracking",
+        "📡 RESTful API for Mobile (Flutter) & Web " 
       ],
       gradient: "from-emerald-500 to-teal-600"
     },
     {
       title: "QAMC – College Management System",
-      description: "A complete college management system designed for educational institutions. Features student enrollment, course management, faculty administration, grade tracking, and comprehensive reporting. Built with modern web technologies for optimal performance.",
+      description: "A comprehensive College Management System designed to manage academic and administrative operations within higher education institutions. The system streamlines student enrollment, faculty management, course coordination, attendance tracking, lecture scheduling, and institutional communication.It provides centralized control over departments, degrees, academic sessions, and reporting to improve operational efficiency and transparency.",
       icon: GraduationCap,
       technologies: ["ASP.NET Core", "MVC", "Entity Framework", "SQL Server", "Bootstrap", "jQuery"],
       features: [
-        "Student Management",
-        "Course & Curriculum Management",
-        "Faculty Administration",
-        "Grade & Assessment Tracking",
-        "Comprehensive Reporting"
+        "🎓 Student Management  ", 
+        "🏢 Department Management", 
+        "📘 Subject Management", 
+        "👩‍🏫 Teacher & Faculty Management", 
+        "🏷 Designation Management", 
+        "📜 Degree & Program Management", 
+        "🗓 Academic Session Management", 
+        "📝 Lecture & Lecture Type Management", 
+        "📊 Attendance Management", 
+        "📆 Holiday Management", 
+        "📩 SMS Notification System", 
+        "📈 Reports & Analytics"
       ],
       gradient: "from-blue-500 to-indigo-600"
     }
@@ -89,7 +100,7 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-3 pt-4">
+                {/* <div className="flex gap-3 pt-4">
                   <Button variant="outline" size="sm" className="btn-outline-primary flex-1">
                     <Github className="mr-2 h-4 w-4" />
                     Code
@@ -98,13 +109,13 @@ const Projects = () => {
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </Button>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-12 animate-fade-in">
+        {/* <div className="text-center mt-12 animate-fade-in">
           <p className="text-muted-foreground mb-6">
             Want to see more of my work? Check out my GitHub profile for additional projects and contributions.
           </p>
@@ -112,7 +123,7 @@ const Projects = () => {
             <Github className="mr-2 h-5 w-5" />
             View All Projects on GitHub
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
