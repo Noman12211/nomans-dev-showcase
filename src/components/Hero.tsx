@@ -29,23 +29,7 @@ const Hero = () => {
             Building secure, scalable, and high-performance applications with modern technologies and best practices.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
-              className="btn-hero text-white px-8 py-4 text-lg font-semibold rounded-xl"
-            >
-              <Download className="mr-2 h-5 w-5" />
-              Download CV
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="btn-outline-primary bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold rounded-xl backdrop-blur-sm"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Me
-            </Button>
-          </div>
+          
 
           <button 
             onClick={scrollToAbout}
